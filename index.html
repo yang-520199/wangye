@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>广州大学粤港澳传媒研究中心</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/b_style.css">
+  <script type="text/javascript" src="./js/jQuery1.7.js"></script>
+  <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.1.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/jquery.event.drag-1.5.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.touchSlider.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/index.vsb.css">
+  <meta name="keywords" content="广州大学粤港澳传媒研究中心">
+</head>
+<body>
+  <div class="headerWrap_wc">
+    <div class="header w1200 cleafix">
+      <div class="headL fl">
+        <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+      </div>
+      <div class="navs headR fr">
+        <ul class="nav innav">
+          <li class="mainmenu">
+            <a href="./index.html">首页</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./info/intro.html">中心概况</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./members.html">团队成员</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./events.html">学术活动</a>
+          </li>
+          <li class="mainmenu">
+            <!-- <a href="./notice.html">通知公告</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navtel w1200 cleafix">
+      <div class="logosmall fl">
+        <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="cbp-spmenu-s" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+        <div class="chlogo">
+          <a href="./index.html" class="logo"><img src="./img/logo.png"></a>
+        </div>
+        <ul class="form">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./info/intro.html">中心概况</a></li>
+          <li><a href="./members.html">团队成员</a></li>
+          <li><a href="./events.html">学术活动</a></li>
+          <!-- <li><a href="./notice.html">通知公告</a></li> -->
+        </ul>
+      </nav>
+      <div id="showRight" class="mm-menu-toggle">
+      </div>
+    </div>
+  </div>
+  <div id="hideRight">
+  </div>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script>
+    var menuRight = document.getElementById( 'cbp-spmenu-s' ),
+    showRight = document.getElementById( 'showRight' ),
+    hideRight = document.getElementById( 'hideRight' ),
+    body = document.body;
+    showRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight").css({
+        display:"block",height:$(document).height()
+      });
+    };
+    hideRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight ").fadeOut(300);
+    };
+    function disableOther( button ) {
+      if( button !== 'showRight' ) {
+        classie.toggle( showRight, 'disabled' );
+      }
+    }
+  </script>
+  <div class="bannerWrap_wc cleafix">
+    <div class="w1200 cleafix">
+      <div class="main_visual">
+        <div class="main_image">
+          <ul>
+            <li><span style="background: url(./img/campus1.jpg) center top no-repeat;background-size:100%"></span></li>
+            <li><span style="background: url(./img/campus2.jpg) center top no-repeat;background-size:100%"></span></li>
+            <li><span style="background: url(./img/campus3.jpg) center top no-repeat;background-size:100%"></span></li>
+          </ul>
+          <a id="btn_prev" href="javascript:;"></a>
+          <a id="btn_next" href="javascript:;"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="newsWrap_wc">
+    <div class="news w1200 cleafix">
+      <div id="tab" class="news_list cleafix">
+        <ul class="tab_menu cleafix">
+          <li class="selected">最新动态<b></b></li>
+          <!-- <li>通知公告<b></b></li> -->
+        </ul>
+        <div class="tab_box">
+          <div style="display: block;">
+            <a class="more" href="./events.html"><img src="./img/more.png"></a>
+            <ul class="list cleafix">
+              <li class="cleafix fl">
+                <div class="list_time fl">
+                  <p class="day">11-27</p>
+                  <p class="month">2017</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0001.html" class="tit fl">“粤港台传媒转型”学术研讨会</a>
+                  </div>
+                  <p><a href="./events/0001.html">本网讯11月25日，由我校、台湾世新大学和香港浸会大学共同主办、我校新闻与传播学院承办的“粤港台传媒转型”，...[详细]</a></p>
+                </div>
+                </li>
+              <li class="cleafix fl">
+                <div class="list_time fl">
+                  <p class="day">05-10</p>
+                  <p class="month">2019</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0002.html" class="tit fl">“粤港台澳传媒发展论坛”</a>
+                  </div>
+                  <p><a href="./events/0002.html">2019年5月9-10日，广州大学新闻与传播学院田秋生院长偕学院十余名学者赴港，...[详细]</a></p>
+                </div>
+              </li>
+              <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">12-07</p>
+                  <p class="month">2019</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0003.html" class="tit fl">中国高校影视学会第一届中国影视史学年会</a>
+                  </div>
+                  <p><a href="./events/0003.html">史学专业委员会成立大会暨第一届中国影视史学年会在广州召开。会议吸引了来自海内外50多所高校和科研院所的150名专家学者与会，...[详细]</a></p>
+                </div>
+              </li>
+              <!-- <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">01-11</p>
+                  <p class="month">2020</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./events/0004.html" class="tit fl">退而不休怀家国 科教点亮少年志——走近广州大学老专家科技辅导团</a>
+                  </div>
+                  <p><a href="./events/0004.html">日前，全国离退休干部先进集体和先进个人表彰大会在北京举行，大会表彰了150个离退休干部先进集体和450位先进个人，其中，广东省...[详细]</a></p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+          <!-- <div class="hide" style="display: none;">
+            <a class="more" href="./notice.html"><img src="./img/more.png"></a>
+            <ul class="list cleafix">
+              <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <!-- <p class="day">02-13</p>
+                  <p class="month">2020</p> -->
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./notice/0001.html" class="tit fl">广州大学文桂林教授团队招聘博士后</a>
+                  </div>
+                  <p><a href="./notice/0001.html">​近广州大学是一所综合性大学(一本),校区在广州市大学城,环境优美,...[详细]</a></p>
+                </div>
+              </li>
+              <!-- <li class="cleafix fl" style="border-bottom: 0;">
+                <div class="list_time fl">
+                  <p class="day">02-13</p>
+                  <p class="month">2020</p>
+                </div>
+                <div class="list_wen fr">
+                  <div class="l_tit cleafix">
+                    <a href="./notice/0002.html" class="tit fl">人才招聘信息</a>
+                  </div>
+                  <p><a href="./notice/0002.html">广州大学是以国家重要中心城市“广州”命名的综合性大学，于2000年合并组建，有着...[详细]</a></p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div class="activityWrap_wc">
+    <div class="activity w1200">
+      <div class="act_tit cleafix">
+        <h2>团队成员<b></b></h2>
+        <a href="./members.html"><img src="./img/more.png"></a>
+      </div>
+      <div class="act_com act_com1">
+        <div class="hd">
+          <a class="next"></a>
+          <a class="prev"></a>
+        </div>
+        <div class="Img bd">
+          <div class="tempWrap" style="overflow:hidden; position:relative; width:1200px">
+            <ul style="width: 2400px; left: -1200px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+              <li style="float: left; width: 164px;">
+                <a href="./members/lu_chen.html"><img src="./img/lu_chen_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/lu_chen.html">陈璐，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/chen_fang.html"><img src="./img/chen_fang_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/chen_fang.html">方晨，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/qin_guo.html"><img src="./img/qin_guo_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/qin_guo.html">郭秦，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/li_li.html"><img src="./img/li_li_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/li_li.html">黎藜，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/jin_li.html"><img src="./img/jin_li_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/jin_li.html">李近，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/li_li_01.html"><img src="./img/li_li_01_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/li_li_01.html">李鲤，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/meihui_li.html"><img src="./img/meihui_li_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/meihui_li.html">李美慧，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/xiangwei_li.html"><img src="./img/xiangwei_li_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/xiangwei_li.html">李祥伟，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/yuanyuan_lin.html"><img src="./img/yuanyuan_lin_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/yuanyuan_lin.html">林渊渊，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/tao_liu.html"><img src="./img/tao_liu_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/tao_liu.html">刘涛，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/yuping_liu.html"><img src="./img/yuping_liu_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/yuping_liu.html">刘玉萍，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/ruoxun_tang.html"><img src="./img/ruoxun_tang_s.JPG" width="164" height="201"></a>
+                <div class="bm"><a href="./members/ruoxun_tang.html">唐若寻，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/qiusheng_tian.html"><img src="./img/qiusheng_tian_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/qiusheng_tian.html">田秋生，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/deyong_xia.html"><img src="./img/deyong_xia.jpg" width="164" height="201"></a>
+                <div class="bm"><a href="./members/deyong_xia.html">夏德勇，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/mingxiang_xie.html"><img src="./img/mingxiang_xie_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/mingxiang_xie.html">谢明香，个人简介...</a></div>
+              </li>
+              <li style="float: left; width: 164px;">
+                <a href="./members/qi_xiong.html"><img src="./img/qi_xiong_s.png" width="164" height="201"></a>
+                <div class="bm"><a href="./members/qi_xiong.html">熊琦，个人简介...</a></div>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="linkWrap_wc">
+    <div class="link w1200">
+      <div class="act_tit cleafix">
+        <h2>友情链接<b></b></h2>
+      </div>
+      <div class="link_con cleafix">
+        <div class="links">
+          <dl class="select">
+            <dt>--广州大学--
+              <script language="javascript" src="./js/openlink.js"></script>
+            </dt>
+            <dd>
+              <ul>
+                <li><a href="http://www.gzhu.edu.cn/">------广州大学-------</a></li>
+                <li><a href="http://kyc.gzhu.edu.cn/">------广州大学科研处-------</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerWrap_wc">
+    <div class="footer w1200 cleafix">
+      <div class="footL fl cleafix">
+        <a class="logof fl" href="http://arch.gzhu.edu.cn/index.htm#">
+          <img src="./img/logo2.png">
+        </a>
+        <span class="footjs fl">
+          <p>广州大学粤港澳传媒研究中心<br>地址：广州市番禺区大学城外环西路230号<br>邮编：510006<br>电话：020-3936XXXX<br>Copyright © 2020 版权所有</p>
+        </span>
+      </div>
+      <div class="foot_em fr">
+      </div>
+    </div>
+  </div>
+  <script>jQuery(".act_com1").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:6,trigger:"click"});</script>
+</body>
+</html>

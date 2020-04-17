@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>通知公告-广州大学粤港澳传媒研究中心</title>
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/b_style.css">
+  <script type="text/javascript" src="./js/jQuery1.7.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+  <script type="text/javascript" src="./js/jquery.event.drag-1.5.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.touchSlider.js"></script>
+  <meta name="keywords" content="广州大学粤港澳传媒研究中心">
+</head>
+<body>
+  <div class="headerWrap_wc">
+    <div class="header w1200 cleafix">
+      <div class="headL fl">
+        <a href="./index.html" class="logo">
+          <img src="./img/logo.png">
+        </a>
+      </div>
+      <div class="navs headR fr">
+        <ul class="nav innav">
+          <li class="mainmenu">
+            <a href="./index.html">首页</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./info/intro.html">中心概况</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./members.html">团队成员</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./events.html">学术活动</a>
+          </li>
+          <li class="mainmenu">
+            <a href="./notice.html">通知公告</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navtel w1200 cleafix">
+      <div class="logosmall fl">
+        <a href="./index.html" class="logo">
+          <img src="./img/logo.png">
+        </a>
+      </div>
+      <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s">
+        <div class="chlogo">
+          <a href="./index.html" class="logo">
+            <img src="./img/logo.png">
+          </a>
+        </div>
+        <ul class="form">
+          <li><a href="./index.html">首页</a></li>
+          <li><a href="./info/intro.html">中心概况</a></li>
+          <li><a href="./members.html">团队成员</a></li>
+          <li><a href="./events.html">学术活动</a></li>
+          <li><a href="./notice.html">通知公告</a></li>
+        </ul>
+      </nav>
+      <div id="showRight" class="mm-menu-toggle"></div>
+    </div>
+  </div>
+  <div id="hideRight"></div>
+  <script type="text/javascript" src="./js/classie.js"></script>
+  <script>
+    var menuRight = document.getElementById( 'cbp-spmenu-s' ),
+    showRight = document.getElementById( 'showRight' ),
+    hideRight = document.getElementById( 'hideRight' ),
+    body = document.body;
+    showRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight").css({
+        display:"block",height:$(document).height()
+      });
+    };
+    hideRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight ").fadeOut(300);
+    };
+
+    function disableOther( button ) {
+      if( button !== 'showRight' ) {
+        classie.toggle( showRight, 'disabled' );
+      }
+    }
+  </script>
+  <div class="bannerWrap_wc">
+    <div class="Ban">
+      <img src="./img/banner.jpg">
+    </div>
+  </div>
+  <div class="teacherWrap">
+    <div class="teacher w1200">
+      <div class="teach_local cleafix">
+        <i><img src="./img/ico2.png"></i>
+        <a href="./index.html">首页</a>
+        <em>&gt;</em>
+        <a href="./notice.html" class="cur">通知公告</a>
+      </div>
+      <div class="teach_con cleafix">
+        <div class="teachL fl">
+          <h2>通知公告</h2>
+          <div class="tea_menu">通知公告</div>
+        </div>
+        <div class="teachR fr">
+          <ul class="list">
+            <li class="cleafix">
+              <div class="list_time fl">
+                <!-- <p class="day">02-13</p>
+                <p class="month">2020</p> -->
+              </div>
+              <div class="list_wen fr">
+                <div class="l_tit cleafix">
+                  <a href="./notice/0001.html" class="tit fl">广州大学文桂林教授团队招聘博士后</a>
+                </div>
+                <p><a href="./notice/0001.html">​广州大学是一所综合性大学(一本),校区在广州市大学城,环境优美,交通方便。该
+                  校是广东省高水平大学重点学科建设高校、广州市高水平大学建设高校。该校...[详细]</a></p>
+              </div>
+            </li>
+            <!-- <li class="cleafix">
+              <div class="list_time fl">
+                <p class="day">02-13</p>
+                <p class="month">2020</p>
+              </div>
+              <div class="list_wen fr">
+                <div class="l_tit cleafix">
+                  <a href="./notice/0002.html" class="tit fl">人才招聘信息</a>
+                </div>
+                <p><a href="./notice/0002.html">广州大学是以国家重要中心城市“广州”命名的综合性大学，于2000年合并组建，有着90多年的办学传统。学校立足粤港澳大湾区区位优势，强化大学的使命与担当，锐意改革，开拓进取...[详细]</a></p>
+              </div> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerWrap_wc">
+    <div class="footer w1200 cleafix">
+      <div class="footL fl cleafix">
+        <a class="logof fl" href="http://arch.gzhu.edu.cn/index.htm#">
+          <img src="./img/logo2.png">
+        </a>
+        <span class="footjs fl">
+          <p>广州大学粤港澳传媒研究中心<br>地址：广州市番禺区大学城外环西路230号<br>邮编：510006<br>Copyright © 2020 版权所有</p>
+        </span>
+      </div>
+      <div class="foot_em fr">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

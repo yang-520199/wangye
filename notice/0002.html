@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>中心简介-广州大学XX研究中心</title>
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/b_style.css">
+  <script type="text/javascript" src="../js/jQuery1.7.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/jquery.event.drag-1.5.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.touchSlider.js"></script>
+  <meta name="keywords" content="广州大学XX研究中心">
+</head>
+<body>
+  <div class="headerWrap_wc">
+    <div class="header w1200 cleafix">
+      <div class="headL fl">
+        <a href="../index.html" class="logo">
+          <img src="../img/logo.png">
+        </a>
+      </div>
+      <div class="navs headR fr">
+        <ul class="nav innav">
+          <li class="mainmenu">
+            <a href="../index.html">首页</a>
+          </li>
+          <li class="mainmenu">
+            <a href="../info/intro.html">中心概况</a>
+          </li>
+          <li class="mainmenu">
+            <a href="../members.html">团队成员</a>
+          </li>
+          <li class="mainmenu">
+            <a href="../events.html">学术活动</a>
+          </li>
+          <li class="mainmenu">
+            <a href="../notice.html">通知公告</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navtel w1200 cleafix">
+      <div class="logosmall fl">
+        <a href="../index.html" class="logo">
+          <img src="../img/logo.png">
+        </a>
+      </div>
+      <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s">
+        <div class="chlogo">
+          <a href="../index.html" class="logo">
+            <img src="../img/logo.png">
+          </a>
+        </div>
+        <ul class="form">
+          <li><a href="../index.html">首页</a></li>
+          <li><a href="../info/intro.html">中心概况</a></li>
+          <li><a href="../members.html">团队成员</a></li>
+          <li><a href="../events.html">学术活动</a></li>
+          <li><a href="../notice.html">通知公告</a></li>
+        </ul>
+      </nav>
+      <div id="showRight" class="mm-menu-toggle"></div>
+    </div>
+  </div>
+  <div id="hideRight"></div>
+  <script type="text/javascript" src="../js/classie.js"></script>
+  <script>
+    var menuRight = document.getElementById( 'cbp-spmenu-s' ),
+    showRight = document.getElementById( 'showRight' ),
+    hideRight = document.getElementById( 'hideRight' ),
+    body = document.body;
+    showRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight").css({
+        display:"block",height:$(document).height()
+      });
+    };
+    hideRight.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( menuRight, 'cbp-spmenu-open' );
+      disableOther( 'showRight' );
+      $("#hideRight ").fadeOut(300);
+    };
+
+    function disableOther( button ) {
+      if( button !== 'showRight' ) {
+        classie.toggle( showRight, 'disabled' );
+      }
+    }
+  </script>
+  <div class="bannerWrap_wc">
+    <div class="Ban">
+      <img src="../img/banner.jpg">
+    </div>
+  </div>
+  <div class="teacherWrap">
+    <div class="teacher w1200">
+      <div class="teach_local cleafix">
+        <i><img src="../img/ico2.png"></i>
+        <a href="../index.html">首页</a>
+        <em>&gt;</em>
+        <a href="../notice.html">通知公告</a>
+        <em>&gt;</em>
+        <a href="../notice/0001.html" class="cur">正文</a>
+      </div>
+      <div class="teach_con cleafix">
+        <div class="teachL fl">
+          <h2>通知公告</h2>
+          <div class="tea_menu">通知公告</div>
+        </div>
+        <div class="teachR fr">
+          <div class="contain">
+            <h2>人才招聘信息</h2>
+            <p class="date">发布时间: 2020-02-13</p>
+            <div class="con">
+              <p></p>
+              <div id="vsb_content_1466_u101">
+                <div id="vsb_content">
+                  <p>广州大学是以国家重要中心城市“广州”命名的综合性大学，于2000年合并组建，有着90多年的办学传统。学校立足粤港澳大湾区区位优势，强化大学的使命与担当，锐意改革，开拓进取，各项事业实现跨越式发展，是广东省和广州市高水平大学建设高校。</p>
+                  <p>学校设有27个学院，涵盖哲学、经济学、法学、教育学、文学、历史学、理学、工学、管理学、艺术学等十大学科门类。拥有3个博士后科研流动站，8个一级学科博士授权点和博士专业学位授权点，31个一级学科硕士授权点，13个硕士专业学位授权点（其中工程硕士下设7个领域），2018年本科招生专业63个。现有在校全日制学生34241人，其中本科生30024人、硕士博士研究生4217人。</p>
+                  <p>学校以人才培养为中心工作，突出本科教育的基础地位；以“德才兼备、家国情怀、视野开阔，爱体育、懂艺术，能力发展性强”作为人才培养目标，把思想政治教育和创新创业教育融入人才培养全过程。培育了一批创业团队，拥有广州芭蕾舞团、广州歌舞团等高水平的艺术团体和一批科技文化含量高、学生乐于参与的学生社团和文化品牌项目。</p>
+                  <p>学校有大学城、桂花岗两个校区，拥有丰富的教学资源和较完善的科研设施。全校现有在编教职工2890人，其中教学科研人员1941人，副高以上职称者1197人。学校拥有一批高层次人才，其中中国科学院院士2名，中国工程院院士2名，澳大利亚技术科学与工程院院士1人, 国际欧亚科学院院士1名，各类“长江学者”6人，“万人计划”教学名师1人、领军人才4人,国家杰青和优青获得者16人。学校设立了工程抗震研究中心、网络空间先进技术研究院、计算科技研究院、智能制造研究院、大湾区环境研究院、广州发展研究院、广州国际金融研究院和人权研究院等一批重要研究平台，承担了一批973项目、863项目、国家重点研发计划项目、国家自然科学基金项目和国家社会科学基金项目。</p>
+                  <p>学校坚持开放办学。先后与30个国家或地区的200多所大学和科研院所建立了教育与科技合作关系, 2002年创办了全国第一所中法旅游学院；先后与意大利帕多瓦大学和美国卫斯理安学院合作建立了孔子学院。与淡江大学、帕多瓦大学、林雪平大学等知名高校建立科研平台和机构，开展合作办学和合作研究。</p>
+                  <p>“博学笃行、与时俱进”。今天的广州大学正站在新的起点上，学校将紧紧围绕“立德树人”根本任务，坚持“三个面向”（面向国际学术前沿，面向国家重大战略需求，面向国家和区域经济社会需求），深度实施与广州发展的“三个对接”（对接城市建设，对接城市创新，对接城市开放），以解放思想、改革创新为动力，着力推进内涵建设、创新引领、特色发展和开放办学，全面加强党的建设，全面推进高水平大学建设，努力将学校建设成为与广州城市发展深度融合、与广州城市地位相得益彰，具有学科、城市区域和国际化特色的高水平大学。</p>
+                  <p>为进一步落实“人才强校”战略，推进学校学科建设与师资队伍建设，促进高水平大学建设，现面向海内外招聘具有较大国际学术影响的科技领军人才，学科与学术带头人，以及具有较强创新能力和学术发展潜力的青年杰出人才，真诚欢迎海内外优秀学者加盟广州大学。</p>
+                  <p>本研究中心欢迎海内外优秀学者加盟，具体待遇和条件详见广州大学人才招聘信息（http://www.gzhu.edu.cn/rczp.htm）。</p>
+                </div>
+              </div>
+            </div>
+            <span id="vsb_content_1466_u10" name="vsb_content_1466_u10"></span>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerWrap_wc">
+    <div class="footer w1200 cleafix">
+      <div class="footL fl cleafix">
+        <a class="logof fl" href="http://arch.gzhu.edu.cn/index.htm#">
+          <img src="../img/logo2.png">
+        </a>
+        <span class="footjs fl">
+          <p>广州大学XX研究中心<br>地址：广州市番禺区大学城外环西路230号<br>邮编：510006<br>Copyright © 2020 版权所有</p>
+        </span>
+      </div>
+      <div class="foot_em fr">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
